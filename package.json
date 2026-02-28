@@ -1,6 +1,7 @@
 {
   "name": "evel",
   "version": "1.0.0",
+  "description": "service to learn claude",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
