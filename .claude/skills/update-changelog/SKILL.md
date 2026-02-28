@@ -22,6 +22,7 @@ Update `CHANGELOG.md` to reflect the current changes, following [Keep a Changelo
 2. If `CHANGELOG.md` does not exist, create it with the structure below
 3. Add a concise entry under the appropriate type inside `[Unreleased]`
 4. Stage the file: `git add CHANGELOG.md`
+5. **Always** print the new changelog lines to the developer — this step is mandatory and must never be skipped
 
 ## Format
 ```markdown
