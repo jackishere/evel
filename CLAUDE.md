@@ -16,3 +16,5 @@ Minimal Express server.
 
 ## Commits
 EVERY commit must be handled exclusively by the `code-commiter` agent. Never execute mutating git commands (commit, push, merge, rebase, reset, etc.) directly. The agent must output the exact command and parameters for the user to copy and run themselves.
+
+Only invoke the `code-commiter` agent when the developer explicitly asks to commit (e.g. "commit", "commit this", "commit and push"). Do not invoke it automatically after making changes.
