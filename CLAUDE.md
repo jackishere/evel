@@ -15,4 +15,4 @@ Minimal Express server.
 - Test endpoints after changes
 
 ## Commits
-EVERY commit must be handled exclusively by the `code-commiter` agent. Never commit directly — always delegate to the agent.
+EVERY commit must be handled exclusively by the `code-commiter` agent. Never execute mutating git commands (commit, push, merge, rebase, reset, etc.) directly. The agent must output the exact command and parameters for the user to copy and run themselves.
