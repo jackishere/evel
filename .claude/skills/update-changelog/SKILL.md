@@ -19,10 +19,18 @@ Update `CHANGELOG.md` to reflect the current changes, following [Keep a Changelo
 
 ## Steps
 1. Run `git diff --staged` to understand what is changing
-2. If `CHANGELOG.md` does not exist, create it with the structure below
-3. Add a concise entry under the appropriate type inside `[Unreleased]`
-4. Stage the file: `git add CHANGELOG.md`
-5. **Always** print the new changelog lines to the developer — this step is mandatory and must never be skipped
+2. Read `package.json` to get the `name` and `version` fields
+3. Get today's date in ISO 8601 format (`YYYY-MM-DD`)
+4. If `CHANGELOG.md` does not exist, create it with the structure below
+5. Add a concise entry under the appropriate type inside `[Unreleased]`, prefixed with `[<name> v<version> - <YYYY-MM-DD>]`
+6. Stage the file: `git add CHANGELOG.md`
+7. **Always** print the new changelog lines to the developer — this step is mandatory and must never be skipped
+
+## Entry prefix format
+Each changelog entry must be prefixed with the service name, version, and date:
+```
+- [evel v1.0.0 - 2024-01-15] Description of the change
+```
 
 ## Format
 ```markdown
@@ -35,10 +43,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
-- Example new feature
+- [evel v1.0.0 - YYYY-MM-DD] Example new feature
 
 ## [1.0.0] - YYYY-MM-DD
 
 ### Added
-- Initial release
+- [evel v1.0.0 - YYYY-MM-DD] Initial release
 ```
