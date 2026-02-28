@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+- [evel v1.0.0 - 2026-02-28] code-commiter agent switched to haiku model
+
+### Fixed
+- [evel v1.0.0 - 2026-02-28] code-commiter agent and update-changelog skill now correctly write CHANGELOG.md and include it in every commit
+
 ### Added
 - `code-commiter` agent with conventional commits and changelog update skills
 - `update-changelog` skill following Keep a Changelog 1.1.0

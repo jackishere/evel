@@ -18,16 +18,15 @@ Update `CHANGELOG.md` to reflect the current changes, following [Keep a Changelo
   - `Security` — vulnerability fixes
 
 ## Steps
-1. Run `git diff --staged` to understand what is changing
+1. Run `git diff` and `git status` to understand what is changing
 2. Read `package.json` to get the `name` and `version` fields
 3. Get today's date in ISO 8601 format (`YYYY-MM-DD`)
 4. If `CHANGELOG.md` does not exist, create it with the structure below
-5. Add a concise entry under the appropriate type inside `[Unreleased]`, prefixed with `[<name> v<version> - <YYYY-MM-DD>]`
-6. Stage the file: `git add CHANGELOG.md`
-7. **Always** print the new changelog lines to the developer — this step is mandatory and must never be skipped
+5. **Physically write the new entry into `CHANGELOG.md`** using the Edit or Write tool — do not just describe what should be added
+6. **Always** print the new lines added to `CHANGELOG.md` to the developer — mandatory, never skip
 
 ## Entry prefix format
-Each changelog entry must be prefixed with the service name, version, and date:
+Each entry must be prefixed with service name, version, and date:
 ```
 - [evel v1.0.0 - 2024-01-15] Description of the change
 ```
