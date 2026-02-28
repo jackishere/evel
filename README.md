@@ -22,3 +22,7 @@ Server runs on port 3000 by default. Set the `PORT` environment variable to over
 |--------|------|----------|
 | GET | `/health` | `{"status":"ok"}` |
 | POST | `/echo` | Echoes the request body as JSON |
+
+## Development
+
+All commits are managed by the `code-commiter` Claude Code agent using the [Conventional Commits](https://www.conventionalcommits.org) specification.
