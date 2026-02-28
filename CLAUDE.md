@@ -13,4 +13,6 @@ Minimal Express server.
 ## Guidelines
 - Keep it simple
 - Test endpoints after changes
-- Use conventional commits
+
+## Commits
+EVERY commit must be handled exclusively by the `code-commiter` agent. Never commit directly — always delegate to the agent.
